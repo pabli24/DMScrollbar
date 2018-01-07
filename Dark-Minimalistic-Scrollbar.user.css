@@ -1,10 +1,11 @@
 /* ==UserStyle==
-@name Dark Minimalistic Scrollbar
-@namespace https://github.com/pabli24/DMScrollbar
-@version 0.1.0
-@description Customizable scrollbar for WebKit based browsers (like Chrome, Opera).
-@author Pabli
-@homepageURL https://github.com/pabli24/DMScrollbar
+@name         Dark Minimalistic Scrollbar
+@namespace    https://github.com/pabli24/DMScrollbar
+@version      0.1.0
+@description  Customizable scrollbar for WebKit based browsers (like Chrome, Opera).
+@author       Pabli
+@license      CC-BY-SA-4.0
+@homepageURL  https://github.com/pabli24/DMScrollbar
 @preprocessor uso
 @advanced color border "border:" #484848
 @advanced color bar "bar:" #383838
