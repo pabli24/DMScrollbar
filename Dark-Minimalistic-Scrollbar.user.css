@@ -1,0 +1,42 @@
+/* ==UserStyle==
+@name Dark Minimalistic Scrollbar
+@namespace https://github.com/pabli24/DMScrollbar
+@version 0.1.0
+@description Customizable scrollbar for WebKit based browsers (like Chrome, Opera).
+@author Pabli
+@homepageURL https://github.com/pabli24/DMScrollbar
+@preprocessor uso
+@advanced color border "border:" #484848
+@advanced color bar "bar:" #383838
+@advanced color hover "hover:" #282828
+@advanced color active "active:" #181818
+@advanced color corner "corner:" #383838
+@advanced color bg "background:" rgba(0,0,0,0)
+@advanced text width "width:" 10px
+@advanced text b "border:" 2px
+@advanced text br "border-radius:" 10px
+==/UserStyle== */
+
+@-moz-document regexp(".*?") {
+::-webkit-scrollbar {
+	width: /*[[width]]*/!important;
+	height: /*[[width]]*/!important;
+}
+::-webkit-scrollbar-thumb {
+	background-color: /*[[bar]]*/!important;
+	border: /*[[b]]*/ solid /*[[border]]*/!important;
+	border-radius: /*[[br]]*/!important;
+}
+::-webkit-scrollbar-track {
+	background-color: /*[[bg]]*/!important;
+}
+::-webkit-scrollbar-thumb:hover {
+	background: /*[[hover]]*/!important;
+}
+::-webkit-scrollbar-thumb:active {
+	background: /*[[active]]*/!important;
+}
+::-webkit-scrollbar-corner {
+	background: /*[[corner]]*/!important;
+}
+}
