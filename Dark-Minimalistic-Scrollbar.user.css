@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name         Dark Minimalistic Scrollbar
 @namespace    https://github.com/pabli24/DMScrollbar
-@version      0.1.1
+@version      0.1.2
 @description  Customizable scrollbar for WebKit based browsers (Chrome, Opera).
 @author       Pabli
 @license      CC-BY-SA-4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
@@ -9,36 +9,41 @@
 @supportURL   https://github.com/pabli24/DMScrollbar/issues
 @updateURL    https://raw.githubusercontent.com/pabli24/DMScrollbar/master/Dark-Minimalistic-Scrollbar.user.css
 @preprocessor uso
-@advanced color border "border:" #484848
-@advanced color bar "bar:" #383838
-@advanced color hover "hover:" #282828
-@advanced color active "active:" #181818
-@advanced color corner "corner:" #383838
-@advanced color bg "background:" rgba(0,0,0,0)
-@advanced text width "width:" 10px
-@advanced text b "border:" 2px
-@advanced text br "border-radius:" 10px
+@var color border "border" #484848
+@var color bar "bar" #383838
+@var color hover "hover" #282828
+@var color active "active" #181818
+@var color corner "corner" #383838
+@var color bg "background" rgba(0,0,0,0)
+@var number width "width (px)" [10,0,null,null,'px']
+@var number b "border (px)" [2,0,null,null,'px']
+@var number br "border-radius (px)" [10,0,null,null,'px']
 ==/UserStyle== */
 @-moz-document regexp(".*") {
 ::-webkit-scrollbar {
-	width: /*[[width]]*/!important;
-	height: /*[[width]]*/!important;
+	width: /*[[width]]*/ !important;
+	height: /*[[width]]*/ !important;
+	max-width: /*[[width]]*/ !important;
+	max-height: /*[[width]]*/ !important;
+	min-width: /*[[width]]*/ !important;
+	min-height: /*[[width]]*/ !important;
 }
 ::-webkit-scrollbar-thumb {
-	background-color: /*[[bar]]*/!important;
-	border: /*[[b]]*/ solid /*[[border]]*/!important;
-	border-radius: /*[[br]]*/!important;
+	background-color: /*[[bar]]*/ !important;
+	border: /*[[b]]*/ solid /*[[border]]*/ !important;
+	border-radius: /*[[br]]*/ !important;
 }
 ::-webkit-scrollbar-track {
-	background-color: /*[[bg]]*/!important;
+	background-color: /*[[bg]]*/ !important;
 }
 ::-webkit-scrollbar-thumb:hover {
-	background: /*[[hover]]*/!important;
+	background: /*[[hover]]*/ !important;
+	border: /*[[b]]*/ solid /*[[border]]*/ !important;
 }
 ::-webkit-scrollbar-thumb:active {
-	background: /*[[active]]*/!important;
+	background: /*[[active]]*/ !important;
 }
 ::-webkit-scrollbar-corner {
-	background: /*[[corner]]*/!important;
+	background: /*[[corner]]*/ !important;
 }
 }
