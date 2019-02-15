@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name         Dark Minimalistic Scrollbar
 @namespace    https://github.com/pabli24/DMScrollbar
-@version      0.1.2
+@version      0.1.3
 @description  Customizable scrollbar for WebKit based browsers (Chrome, Opera).
 @author       Pabli
 @license      CC-BY-SA-4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
@@ -20,7 +20,7 @@
 @var number br "border-radius (px)" [10,0,null,null,'px']
 ==/UserStyle== */
 @-moz-document regexp(".*") {
-::-webkit-scrollbar {
+html::-webkit-scrollbar {
 	width: /*[[width]]*/ !important;
 	height: /*[[width]]*/ !important;
 	max-width: /*[[width]]*/ !important;
@@ -28,22 +28,22 @@
 	min-width: /*[[width]]*/ !important;
 	min-height: /*[[width]]*/ !important;
 }
-::-webkit-scrollbar-thumb {
+html::-webkit-scrollbar-thumb {
 	background-color: /*[[bar]]*/ !important;
 	border: /*[[b]]*/ solid /*[[border]]*/ !important;
 	border-radius: /*[[br]]*/ !important;
 }
-::-webkit-scrollbar-track {
+html::-webkit-scrollbar-track {
 	background-color: /*[[bg]]*/ !important;
 }
-::-webkit-scrollbar-thumb:hover {
+html::-webkit-scrollbar-thumb:hover {
 	background: /*[[hover]]*/ !important;
 	border: /*[[b]]*/ solid /*[[border]]*/ !important;
 }
-::-webkit-scrollbar-thumb:active {
+html::-webkit-scrollbar-thumb:active {
 	background: /*[[active]]*/ !important;
 }
-::-webkit-scrollbar-corner {
+html::-webkit-scrollbar-corner {
 	background: /*[[corner]]*/ !important;
 }
 }
