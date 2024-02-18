@@ -1,3 +1,5 @@
+# New version: https://github.com/pabli24/ultimate-scrollbar
+
 <img align="right" src="./images/dms.gif"><h1 align="center"><i>Dark Minimalistic Scrollbar</i></h1>
 
 Working on Chrome, Opera and probably in any other WebKit based browsers. You can change colors and sizes for elements of scrollbar.
