@@ -1,4 +1,4 @@
-# New version: https://github.com/pabli24/ultimate-scrollbar
+# New version: [Ultimate ScrollBar](https://github.com/pabli24/ultimate-scrollbar)
 
 <img align="right" src="./images/dms.gif"><h1 align="center"><i>Dark Minimalistic Scrollbar</i></h1>
 
